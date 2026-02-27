@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f0f7; /* Um lilás bem clarinho ao fundo */
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4b0082; /* Roxo Indigo profundo */
+    color: white;
+    padding: 2.5rem 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.1); /* Sombra levemente arroxeada */
+    width: 250px;
+    border: 1px solid #e1d5f2;
+}
+
+.card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+h2 {
+    color: #4b0082;
+}
+
+button {
+    background-color: #8e44ad; /* Roxo Ametista */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #6a0dad; /* Roxo mais escuro ao passar o mouse */
+}
+
+.mensagem {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #9b59b6;
+    min-height: 20px;
+}
