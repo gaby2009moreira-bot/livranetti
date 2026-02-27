@@ -1,15 +1,14 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f3f0f7; /* Um lilás bem clarinho ao fundo */
+    background-color: #f3f0f7;
     margin: 0;
     text-align: center;
 }
 
 header {
-    background-color: #4b0082; /* Roxo Indigo profundo */
+    background-color: #4b0082;
     color: white;
     padding: 2.5rem 0;
-    width: 100%;
 }
 
 h1 {
@@ -20,35 +19,45 @@ h1 {
     letter-spacing: -2px;
 }
 
+.titulo-sessao {
+    color: #4b0082;
+    margin-top: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 .card {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.1); /* Sombra levemente arroxeada */
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.1);
     width: 250px;
     border: 1px solid #e1d5f2;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
     border-radius: 10px;
     margin-bottom: 15px;
     width: 100%;
-}
-
-h2 {
-    color: #4b0082;
+    height: 350px;
+    object-fit: cover;
 }
 
 button {
-    background-color: #8e44ad; /* Roxo Ametista */
+    background-color: #8e44ad;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -59,8 +68,24 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
-    background-color: #6a0dad; /* Roxo mais escuro ao passar o mouse */
+/* Estilo para quando o botão estiver no carrinho */
+.btn-remover {
+    background-color: #e74c3c !important;
+}
+
+#carrinho {
+    border: 3px dashed #4b0082;
+    border-radius: 20px;
+    margin: 20px 50px;
+    min-height: 200px;
+    background-color: #ffffff;
+}
+
+#carrinho-vazio {
+    width: 100%;
+    color: #9b59b6;
+    font-style: italic;
+    padding-top: 80px;
 }
 
 .mensagem {
